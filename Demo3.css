@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=poppins:wght@400&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+}
+nav{
+    display: flex;
+    width: 100%;
+    background: #0a5071;
+    position: relative;
+    justify-content: space-between;
+    text-align: center;
+    padding: 15px 30px;
+}
+nav .icon{
+    font-size: 35px;
+    font-weight: 800;
+    color: #fff;
+    cursor: pointer;
+}
+nav ol{
+    display: flex;
+    list-style: none;
+    margin: auto 0;
+}
+nav ol li{
+    margin: 0 2px;
+}
+nav ol li a{
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    padding: 5px 10px;
+}
+nav ol li:hover a{
+    background: #fff;
+    color: #0a5071;
+}
+nav .search_box{
+    display: flex;
+    margin: auto 0;
+    height: 35px;
+    line-height: 35px;
+}
+nav .search_box input{
+    border: none;
+    outline: none;
+    background: #fff;
+    height: 100%;
+    padding: 0 10px;
+    font-size: 20px;
+    width: 350px;
+}
+nav .search_box span{
+    color: #0a5071;
+    font-size: 20px;
+    background: #fff;
+    height: 100%;
+    padding: 8px;
+    position: relative;
+    cursor: pointer;
+    z-index: 1;
+}
+nav .search_box span:hover{
+    color: #fff;
+}
+nav .search_box span::after{
+    height: 100%;
+    width: 0%;
+    content: '';
+    background: #ff003c;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    transition: 0.3s;
+}
+nav .search_box span:hover::after{
+    width: 100%;
+}
+nav .bar{
+    position: relative;
+    margin: auto;
+    display: none;
+}
+nav .bar span{
+    position: absolute;
+    color: #fff;
+    font-size: 35px;
+}
+input[type="checkbox"]{
+    -webkit-appearance: none;
+    display: none;
+}
+
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #9de1f8;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    margin-top: 20px;
+}
+
+.gallery-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px auto;
+}
+
+.image-gallery {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    max-width: 1200px;
+    gap: 10px; /* Add space between images */
+    margin-bottom: 37.8px; /* Space between rows (approx. 1 cm) */
+}
+
+.image-item {
+    text-align: center;
+    flex: 1;
+    border: 2px solid #000;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: #fff; /* White background to make the border visible */
+}
+
+.image-item img {
+    width: 100%;
+    height: auto;
+}
+
+.image-item .top-line,
+.image-item .bottom-line {
+    border: 1px solid #000;
+    width: 80%;
+    margin: 10px auto; /* Adjusts the spacing around the line */
+}
+
+.image-item .bottom-line {
+    margin-top: 20px; /* Extra space between text and bottom line */
+}
+
+.image-item p {
+    margin-top: 10px;
+    font-size: 16px;
+}
+/* Background Image Section */
+.background-image {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+.background-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.8;
+}
+.overlay-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+/* Repair Grid */
+.repair-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    margin: 20px 0;
+}
+.repair-box {
+    text-align: center;
+    background: #f8f8f8;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+}
+.repair-box img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+.repair-box .title {
+    padding: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    background-color: #333;
+    color: white;
+    text-align: center;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 200px;
+    background-color: #f4f4f4;
+    padding: 20px;
+    height: 100vh;
+    position: sticky;
+    top: 50px;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+/*@media screen and (max-width: 1250px){
+    nav{
+        display: block;
+        padding: 0;
+    }
+
+    nav.icon{
+        display: inline-block;
+        padding: 15px 30px;
+    }
+    nav .search_box{
+        width: 100%;
+        display: inline-flex;
+        justify-content: center;
+        margin-bottom: 15px;
+    }
+    nav .search_box input{
+        width: 90%;
+    }
+    nav ol{
+        display: flex;
+        flex-direction: column;
+        background: #fff;
+    }
+    nav ol li{
+        text-align: center;
+    }
+    nav ol li a{
+        color: #000;
+        font-size: 28px;
+        padding: 5px;
+        display: block;
+    }
+    section{
+        background: url("C:/Users/Adil/OneDrive/Desktop/web/blue.png");
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        background-position: center;
+        background-size: cover;
+        top: 0;
+        z-index: -1;
+        filter: brightness(30%);
+    }
+}*/
